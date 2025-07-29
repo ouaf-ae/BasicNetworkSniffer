@@ -29,7 +29,7 @@ def packet_callback(packet):
         log_line = f"[{timestamp}] [{proto_name}] {ip_src}:{sport} --> {ip_dst}:{dport} | Size: {size} bytes"
         print(log_line)
 
-        # نسجلو المعلومة فـ ملف
+        # 
         with open("log.txt", "a") as f:
             f.write(log_line + "\n")
 
